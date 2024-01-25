@@ -7,19 +7,19 @@ import { Home, CreatePost } from "./pages";
 function App() {
   return (
     <BrowserRouter>
-      <header className="w-full flex justify-between items-center sm:px-16 px-4 py-4  bg-[#092635]">
+      <header className="w-full flex justify-between items-center sm:px-16 px-4 py-4  bg-[#131314]">
         <Link to="/">
           <img src={logo} alt="logo" className="w-28 object-contain"/>
         </Link>
 
-        <Link
+        <Link 
           to="/create-post"
-          className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md"
+          className="font-inter font-medium bg-[#1B51A7] text-white px-4 py-2 rounded-md"
         >
           Create
         </Link>
       </header>
-      <main className="sm:p-8 px-4 py-8 w-full bg-[#2D3250] min-h-[calc(100vh-73px)]">
+      <main className="sm:p-8 px-4 py-8 w-full bg-[#1E1F20] min-h-[calc(100vh-73px)]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-post" element={<CreatePost />} />
