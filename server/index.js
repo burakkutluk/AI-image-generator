@@ -2,6 +2,9 @@ import express from "express";
 import * as dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./mongoDB/connect.js";
+// Routes
+import postRoutes from "./routes/postRoutes.js";
+import aiRoutes from "./routes/aiRoutes.js";
 
 dotenv.config();
 const port = process.env.PORT
@@ -15,6 +18,10 @@ app.get("/", async (req, res) => {
     message: "Hello from AImag!",
   });
 });
+
+app.use('/api/post', postRoutes);
+app.use('/api/aImage', aiRoutes);
+
 
 const startServer = async () => {
   try {
