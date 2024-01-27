@@ -30,7 +30,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("http://localhost:3002/api/aImage", {
+        const response = await fetch("https://ai-image-9i0l.onrender.com/api/aImage", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -58,7 +58,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:3002/api/post", {
+        const response = await fetch("https://ai-image-9i0l.onrender.com/api/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
