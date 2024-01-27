@@ -7,9 +7,9 @@ import { Home, CreatePost } from "./pages";
 function App() {
   return (
     <BrowserRouter>
-      <header className="w-full flex justify-between items-center sm:px-16 px-4 py-4 border border-[#0D5AA2] bg-[#0F172A]">
+      <header className="w-full flex justify-between items-center sm:px-16 px-4  border-b border-[#29395D] bg-[#0F172A]">
         <Link to="/">
-          <img src={logo} alt="logo" className="w-28 object-contain"/>
+          <img src={logo} alt="logo" className="w-48 object-contain"/>
         </Link>
 
         <Link 
