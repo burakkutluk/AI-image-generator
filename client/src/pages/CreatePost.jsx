@@ -58,7 +58,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://localhost:3002/api/post",
+          "http://localhost:3002/api/post",
           {
             method: "POST",
             headers: {
